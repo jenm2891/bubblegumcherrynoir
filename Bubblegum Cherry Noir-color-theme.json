@@ -1,0 +1,551 @@
+{
+  "name": "Bubblegum & Cherry Noir",
+  "type": "dark",
+  "colors": {
+    // -------------------------------------
+    // General UI & Workbench
+    // -------------------------------------
+    "workbench.colorCustomizations": {}, // For workbench specific, but often covered below
+    "focusBorder": "#FF1493", // Hot Pink (DeepPink) for focus outlines
+    "foreground": "#CCCCCC", // Default foreground for UI elements not otherwise covered
+    "disabledForeground": "#777777", // For disabled elements
+    "widget.shadow": "#00000099", // Shadow for widgets like find/replace
+
+    "errorForeground": "#DC143C", // Cherry Red for error messages
+
+    // Text Selection
+    "selection.background": "#FF69B490", // Hot Pink with transparency
+    "editor.selectionBackground": "#FF69B470", // Hot Pink with more transparency for editor selection
+    "editor.selectionHighlightBackground": "#FFB6C150", // Light Bubblegum Pink for other occurrences
+
+    // Editor Basics
+    "editor.background": "#1E1E1E", // Dark Gray
+    "editor.foreground": "#FFFFFF", // White
+    "editorLineNumber.foreground": "#A9A9A9", // Dark Gray (lighter)
+    "editorLineNumber.activeForeground": "#FF69B4", // Hot Pink
+    "editorCursor.foreground": "#FF1493", // Hot Pink (DeepPink)
+    "editor.findMatchBackground": "#FFB6C180", // Light Bubblegum Pink for find matches
+    "editor.findMatchHighlightBackground": "#FFB6C150", // Lighter Bubblegum for other matches
+    "editor.hoverHighlightBackground": "#252526", // Dark Gray for hover
+    "editorLink.activeForeground": "#FF69B4", // Hot Pink for active links
+    "editorWhitespace.foreground": "#4A4A4A", // Subtle gray for whitespace characters
+    "editorIndentGuide.background": "#3A3A3A",
+    "editorIndentGuide.activeBackground": "#FF69B4", // Hot Pink for active indent guide
+
+    // Activity Bar
+    "activityBar.background": "#000000", // Black
+    "activityBar.foreground": "#FFFFFF", // White
+    "activityBar.inactiveForeground": "#A9A9A9", // Dark Gray (lighter)
+    "activityBarBadge.background": "#FF1493", // Hot Pink (DeepPink) for notification badges
+    "activityBarBadge.foreground": "#FFFFFF", // White
+
+    // Side Bar
+    "sideBar.background": "#252526", // Dark Gray
+    "sideBar.foreground": "#CCCCCC", // Light Gray/White
+    "sideBarSectionHeader.background": "#000000", // Black
+    "sideBarSectionHeader.foreground": "#FFFFFF", // White
+    "sideBarTitle.foreground": "#FFB6C1", // Light Bubblegum Pink for sidebar titles
+
+    // Status Bar
+    "statusBar.background": "#000000", // Black
+    "statusBar.foreground": "#FFFFFF", // White
+    "statusBar.noFolderBackground": "#000000", // Black
+    "statusBar.debuggingBackground": "#DC143C", // Cherry Red when debugging
+    "statusBar.debuggingForeground": "#FFFFFF",
+    "statusBarItem.activeBackground": "#FF149350", // Hot Pink (DeepPink) transparent
+    "statusBarItem.hoverBackground": "#FF69B450", // Hot Pink transparent
+    "statusBarItem.remoteBackground": "#FF69B4", // Hot Pink
+    "statusBarItem.remoteForeground": "#FFFFFF", // White
+    "statusBarItem.errorBackground": "#DC143C", // Cherry Red for error items
+    "statusBarItem.errorForeground": "#FFFFFF",
+
+    // Title Bar (for OS where VS Code draws the title bar)
+    "titleBar.activeBackground": "#000000", // Black
+    "titleBar.activeForeground": "#FFFFFF", // White
+    "titleBar.inactiveBackground": "#1E1E1E", // Dark Gray
+    "titleBar.inactiveForeground": "#A9A9A9", // Dark Gray (lighter)
+
+    // Tabs
+    "tab.activeBackground": "#1E1E1E", // Dark Gray (editor background)
+    "tab.inactiveBackground": "#000000", // Black
+    "tab.activeForeground": "#FFFFFF", // White
+    "tab.inactiveForeground": "#A9A9A9", // Dark Gray (lighter)
+    "tab.border": "#000000", // Black border between tabs (or match inactiveBackground)
+    "tab.activeBorderTop": "#FF69B4", // Hot Pink top border for active tab
+    "tab.unfocusedActiveBorderTop": "#FF69B480", // More subtle when not focused
+    "editorGroupHeader.tabsBackground": "#000000", // Background of the tabs container
+
+    // Inputs (text fields, dropdowns)
+    "input.background": "#3C3C3C", // Dark Gray
+    "input.foreground": "#FFFFFF", // White
+    "input.border": "#FF69B4", // Hot Pink border for focused inputs
+    "input.placeholderForeground": "#A9A9A9", // Dark Gray (lighter)
+    "inputOption.activeBackground": "#FFB6C1", // Light Bubblegum Pink
+    "inputOption.activeBorder": "#FF1493",
+    "inputValidation.infoBackground": "#007ACC",
+    "inputValidation.infoBorder": "#007ACC",
+    "inputValidation.warningBackground": "#FFD700",
+    "inputValidation.warningBorder": "#FFD700",
+    "inputValidation.errorBackground": "#DC143C", // Cherry Red
+    "inputValidation.errorBorder": "#DC143C",
+
+    // Buttons
+    "button.background": "#FF1493", // Hot Pink (DeepPink)
+    "button.foreground": "#FFFFFF", // White
+    "button.hoverBackground": "#FF69B4", // Lighter Hot Pink on hover
+    "button.secondaryBackground": "#3A3A3A", // Darker gray for secondary buttons
+    "button.secondaryForeground": "#FFFFFF",
+    "button.secondaryHoverBackground": "#4A4A4A",
+
+    // Dropdowns
+    "dropdown.background": "#252526", // Dark Gray
+    "dropdown.listBackground": "#1E1E1E", // Darker Gray or Black
+    "dropdown.border": "#FF69B4", // Hot Pink
+    "dropdown.foreground": "#FFFFFF", // White
+
+    // Lists and Trees (like file explorer, suggestions)
+    "list.hoverBackground": "#2A2D2E90", // Slightly lighter Dark Gray with transparency
+    "list.activeSelectionBackground": "#FF69B4", // Hot Pink
+    "list.activeSelectionForeground": "#FFFFFF", // White
+    "list.inactiveSelectionBackground": "#37373D", // Dark Gray
+    "list.inactiveSelectionForeground": "#CCCCCC",
+    "list.focusBackground": "#FFB6C170", // Light Bubblegum Pink for focused item
+    "list.highlightForeground": "#FF1493", // Hot Pink (DeepPink) for matches in lists (e.g. quick open)
+    "tree.indentGuidesStroke": "#585858",
+
+    // Scrollbar
+    "scrollbarSlider.background": "#FF69B480", // Hot Pink with transparency
+    "scrollbarSlider.hoverBackground": "#FF1493A0", // Hot Pink (DeepPink) with more opacity
+    "scrollbarSlider.activeBackground": "#DC143CA0", // Cherry Red with opacity
+    "scrollbar.shadow": "#00000080",
+
+    // Peek View (inline diffs, references)
+    "peekView.border": "#FF69B4", // Hot Pink
+    "peekViewEditor.background": "#1A1A1A", // Slightly darker than main editor
+    "peekViewResult.background": "#252526",
+    "peekViewTitle.background": "#000000",
+    "peekViewTitleLabel.foreground": "#FFFFFF",
+    "peekViewTitleDescription.foreground": "#CCCCCC",
+
+    // Panel (Terminal, Output, Debug Console)
+    "panel.background": "#1A1A1A", // Slightly different from editor for distinction
+    "panel.border": "#FF69B4", // Hot Pink border on top
+    "panelTitle.activeBorder": "#DC143C", // Cherry Red for active panel title border
+    "panelTitle.activeForeground": "#FFFFFF",
+    "panelTitle.inactiveForeground": "#A9A9A9",
+
+    // Terminal Colors
+    "terminal.background": "#0D0D0D", // Very dark, almost black
+    "terminal.foreground": "#CCCCCC",
+    "terminal.ansiBlack": "#1E1E1E",
+    "terminal.ansiRed": "#DC143C", // Cherry Red
+    "terminal.ansiGreen": "#86B300", // A complementary green
+    "terminal.ansiYellow": "#FFDAB9", // Peach
+    "terminal.ansiBlue": "#61AFEF", // A complementary blue
+    "terminal.ansiMagenta": "#FF69B4", // Hot Pink
+    "terminal.ansiCyan": "#299999", // A complementary teal/cyan
+    "terminal.ansiWhite": "#D0D0D0",
+    "terminal.ansiBrightBlack": "#5C5C5C",
+    "terminal.ansiBrightRed": "#FF1493", // Hot Pink (DeepPink)
+    "terminal.ansiBrightGreen": "#A1D100",
+    "terminal.ansiBrightYellow": "#FFFACD", // Lemon Chiffon
+    "terminal.ansiBrightBlue": "#82C0FF",
+    "terminal.ansiBrightMagenta": "#FFB6C1", // Light Bubblegum Pink
+    "terminal.ansiBrightCyan": "#4CDADA",
+    "terminal.ansiBrightWhite": "#FFFFFF",
+
+    // Git Colors
+    "gitDecoration.addedResourceForeground": "#81B88B", // Soft Green
+    "gitDecoration.modifiedResourceForeground": "#FFB6C1", // Light Bubblegum Pink
+    "gitDecoration.deletedResourceForeground": "#DC143C", // Cherry Red
+    "gitDecoration.untrackedResourceForeground": "#FFDAB9", // Peach
+    "gitDecoration.ignoredResourceForeground": "#777777",
+    "gitDecoration.conflictingResourceForeground": "#FF69B4", // Hot Pink
+
+    // Breadcrumbs
+    "breadcrumb.foreground": "#CCCCCC",
+    "breadcrumb.background": "#1E1E1E", // Editor Background
+    "breadcrumb.focusForeground": "#FFFFFF",
+    "breadcrumb.activeSelectionForeground": "#FFB6C1", // Light Bubblegum Pink
+    "breadcrumbPicker.background": "#000000",
+
+    // Settings Editor
+    "settings.headerForeground": "#FFFFFF",
+    "settings.modifiedItemIndicator": "#FF69B4", // Hot Pink for modified setting indicator
+    "settings.dropdownBackground": "#252526",
+    "settings.dropdownForeground": "#FFFFFF",
+    "settings.dropdownBorder": "#000000",
+    "settings.checkboxBackground": "#252526",
+    "settings.checkboxForeground": "#FFFFFF",
+    "settings.checkboxBorder": "#000000",
+    "settings.textInputBackground": "#3C3C3C",
+    "settings.textInputForeground": "#FFFFFF",
+    "settings.textInputBorder": "#000000",
+    "settings.numberInputBackground": "#3C3C3C",
+    "settings.numberInputForeground": "#FFFFFF",
+    "settings.numberInputBorder": "#000000"
+
+  },
+  "tokenColors": [
+    // General Scopes
+    {
+      "name": "Comments",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#8D8D8D", // Lighter Gray for comments
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Strings",
+      "scope": [
+        "string",
+        "punctuation.definition.string",
+        "string.quoted.single",
+        "string.quoted.double",
+        "string.quoted.triple",
+        "string.unquoted.heredoc"
+      ],
+      "settings": {
+        "foreground": "#FFB6C1" // Light Bubblegum Pink
+      }
+    },
+    {
+      "name": "String Escape Sequences & Interpolation",
+      "scope": [
+        "constant.character.escape",
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end",
+        "punctuation.section.embedded.begin",
+        "punctuation.section.embedded.end"
+      ],
+      "settings": {
+        "foreground": "#FF1493" // Hot Pink (DeepPink) for emphasis within strings
+      }
+    },
+    {
+      "name": "Numbers",
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#FFDAB9" // Peach
+      }
+    },
+    {
+      "name": "Booleans & Null",
+      "scope": ["constant.language.boolean", "constant.language.null", "constant.language.undefined"],
+      "settings": {
+        "foreground": "#FF1493", // Hot Pink (DeepPink)
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Built-in Constants",
+      "scope": ["constant.language", "support.constant"],
+      "settings": {
+        "foreground": "#FF69B4" // Hot Pink
+      }
+    },
+    {
+      "name": "User-defined Constants",
+      "scope": ["variable.other.constant"],
+      "settings": {
+        "foreground": "#FFFFFF" // White
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": ["variable", "support.variable"],
+      "settings": {
+        "foreground": "#FFFFFF" // White
+      }
+    },
+    {
+      "name": "Read-write Variables",
+      "scope": "variable.other.readwrite",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "Parameters (Functions & Methods)",
+      "scope": "variable.parameter",
+      "settings": {
+        "foreground": "#FFDAB9", // Peach, to differentiate from other variables
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Keywords (Control Flow, Storage, Modifiers)",
+      "scope": [
+        "keyword",
+        "keyword.control",
+        "keyword.operator.new",
+        "storage.type",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#FF69B4", // Hot Pink
+        "fontStyle": "" // Ensuring no italics if previous scopes had it
+      }
+    },
+    {
+      "name": "Operators",
+      "scope": ["keyword.operator", "punctuation.accessor"],
+      "settings": {
+        "foreground": "#FF1493" // Hot Pink (DeepPink)
+      }
+    },
+    {
+      "name": "Punctuation (General & Separators)",
+      "scope": [
+        "punctuation",
+        "meta.brace",
+        "punctuation.separator",
+        "punctuation.terminator"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9" // Dark Gray (lighter)
+      }
+    },
+    {
+      "name": "Classes, Structs, Types",
+      "scope": [
+        "entity.name.type",
+        "entity.name.class",
+        "entity.name.struct",
+        "support.type",
+        "support.class",
+        "storage.type.cs" // C# specific
+      ],
+      "settings": {
+        "foreground": "#DC143C", // Cherry Red
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Inherited Classes",
+      "scope": "entity.other.inherited-class",
+      "settings": {
+        "foreground": "#FFB6C1", // Light Bubblegum Pink
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Functions & Methods",
+      "scope": [
+        "entity.name.function",
+        "support.function",
+        "meta.function-call",
+        "entity.name.method" // Python
+      ],
+      "settings": {
+        "foreground": "#FFFFFF", // White
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Function/Method Calls",
+      "scope": [
+        "variable.function", // JS, PHP
+        "variable.annotation", // Python Decorators
+        "meta.function-call.generic"
+      ],
+      "settings": {
+        "foreground": "#FF69B4" // Hot Pink for calls
+      }
+    },
+    {
+      "name": "Namespaces, Modules, Packages",
+      "scope": [
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.package",
+        "entity.name.scope-resolution"
+      ],
+      "settings": {
+        "foreground": "#DC143C", // Cherry Red
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Decorators & Annotations",
+      "scope": [
+        "entity.name.decorator", // Python
+        "meta.decorator entity.name.function", // JS
+        "meta.decorator punctuation.decorator", // JS
+        "storage.type.annotation" // Java, TS
+      ],
+      "settings": {
+        "foreground": "#FF1493", // Hot Pink (DeepPink)
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Special Variables (this, self, super)",
+      "scope": ["variable.language.this", "variable.language.self", "variable.language.super"],
+      "settings": {
+        "foreground": "#FF69B4", // Hot Pink
+        "fontStyle": "italic"
+      }
+    },
+
+    // Markup (HTML / XML / Markdown)
+    {
+      "name": "Tags",
+      "scope": ["entity.name.tag", "punctuation.definition.tag"],
+      "settings": {
+        "foreground": "#DC143C" // Cherry Red
+      }
+    },
+    {
+      "name": "Tag Attributes",
+      "scope": "entity.other.attribute-name",
+      "settings": {
+        "foreground": "#FF69B4", // Hot Pink
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown Headings",
+      "scope": "markup.heading",
+      "settings": {
+        "foreground": "#DC143C", // Cherry Red
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Bold",
+      "scope": "markup.bold",
+      "settings": {
+        "foreground": "#FF69B4", // Hot Pink
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Italic",
+      "scope": "markup.italic",
+      "settings": {
+        "foreground": "#FFB6C1", // Light Bubblegum Pink
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown Links",
+      "scope": ["markup.underline.link", "string.other.link"],
+      "settings": {
+        "foreground": "#FFDAB9" // Peach
+      }
+    },
+    {
+      "name": "Markdown Code",
+      "scope": ["markup.inline.raw", "markup.fenced_code_block"],
+      "settings": {
+        "foreground": "#FFFFFF", // White
+        "background": "#2A2D2E50" // Slightly Lighter Dark Gray background
+      }
+    },
+
+    // CSS / SCSS / LESS
+    {
+      "name": "CSS: Selectors (Tags, IDs, Classes)",
+      "scope": [
+        "entity.name.tag.css",
+        "entity.other.attribute-name.id.css",
+        "entity.other.attribute-name.class.css"
+      ],
+      "settings": {
+        "foreground": "#DC143C" // Cherry Red
+      }
+    },
+    {
+      "name": "CSS: Pseudo Classes/Elements",
+      "scope": [
+        "entity.other.attribute-name.pseudo-class.css",
+        "entity.other.attribute-name.pseudo-element.css"
+      ],
+      "settings": {
+        "foreground": "#FF1493", // Hot Pink (DeepPink)
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "CSS: Property Names",
+      "scope": ["support.type.property-name.css", "entity.name.property"],
+      "settings": {
+        "foreground": "#FFFFFF" // White
+      }
+    },
+    {
+      "name": "CSS: Property Values & Constants",
+      "scope": ["support.constant.property-value.css", "support.constant.color"],
+      "settings": {
+        "foreground": "#FFB6C1" // Light Bubblegum Pink
+      }
+    },
+    {
+      "name": "CSS: Units (px, em, %)",
+      "scope": "keyword.other.unit",
+      "settings": {
+        "foreground": "#FFDAB9" // Peach
+      }
+    },
+    {
+      "name": "CSS: @-rules (media, keyframes)",
+      "scope": "keyword.control.at-rule",
+      "settings": {
+        "foreground": "#FF69B4", // Hot Pink
+        "fontStyle": "bold"
+      }
+    },
+
+    // JSON
+    {
+      "name": "JSON: Keys / Property Names",
+      "scope": ["support.type.property-name.json", "meta.structure.dictionary.key.json string.quoted.double.json"],
+      "settings": {
+        "foreground": "#DC143C" // Cherry Red
+      }
+    },
+    {
+      "name": "JSON: String values",
+      "scope": "meta.structure.dictionary.value.json string.quoted.double.json",
+      "settings": {
+        "foreground": "#FFB6C1" // Light Bubblegum Pink
+      }
+    },
+    {
+      "name": "JSON: Punctuation",
+      "scope": [
+        "punctuation.definition.dictionary.begin.json",
+        "punctuation.definition.dictionary.end.json",
+        "punctuation.separator.dictionary.key-value.json",
+        "punctuation.separator.dictionary.pair.json",
+        "punctuation.definition.array.begin.json",
+        "punctuation.definition.array.end.json",
+        "punctuation.separator.array.json"
+      ],
+      "settings": {
+        "foreground": "#A9A9A9"
+      }
+    },
+
+    // Other useful distinctions
+    {
+        "name": "Preprocessor statements",
+        "scope": "meta.preprocessor",
+        "settings": {
+            "foreground": "#FF1493", // Hot Pink (DeepPink)
+            "fontStyle": "italic"
+        }
+    },
+    {
+        "name": "Invalid or deprecated",
+        "scope": ["invalid", "invalid.deprecated"],
+        "settings": {
+            "foreground": "#FFFFFF",
+            "background": "#DC143C90", // Cherry Red background with some transparency
+            "fontStyle": "italic strikethrough"
+        }
+    }
+  ]
+}

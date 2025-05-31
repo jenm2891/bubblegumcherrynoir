@@ -1,0 +1,21 @@
+{
+  "name": "bubblegum-cherry-noir",
+  "displayName": "BubblegumCherryNoir",
+  "description": "A dark theme with bubblegum pink, cherry red, and hot pink accents.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Bubblegum Cherry Noir",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Bubblegum Cherry Noir-color-theme.json"
+      }
+    ]
+  }
+}
